@@ -67,3 +67,30 @@ Parte 4 — Detecção de bordas após suavização: reaplicação dos detectore
 Ferramentas utilizadas
 Google Colab
 Python (OpenCV, NumPy, Matplotlib)
+
+
+---
+
+## Atividade 3 — Filtragem de Imagens e Análise de Ruído (Domínio da Frequência)
+
+Pasta: [`atividade3-filtragem-frequencia/`](./atividade3-filtragem-frequencia)
+
+**Unidade:** 2 | **Capítulo:** 1 | **Tarefa:** 3
+**Professor responsável:** Rafael Carmo
+
+### Objetivo
+
+Aplicar técnicas de filtragem no domínio da frequência (Transformada de Fourier) e analisar o impacto de ruído artificial (Gaussiano e Sal e Pimenta) sobre o mesmo mini dataset (Copo x Garrafa) construído na Atividade 1.
+
+### Conteúdo do notebook
+
+- **Parte 1 — Seleção das imagens:** 1 imagem de cada classe, com resolução, formato e características apresentadas
+- **Parte 2 — Inserção de ruído:** ruído Gaussiano (μ=0, σ=25) e ruído Sal e Pimenta (2% dos pixels), com análise do impacto visual e estatístico de cada um
+- **Parte 3 — Filtro passa-baixa gaussiano (frequência):** aplicação via FFT com dois cutoffs diferentes, avaliando o trade-off entre remoção de ruído e perda de detalhes
+- **Parte 4 — Filtro passa-alta (frequência):** realce de bordas e estruturas de alta frequência via FFT
+- **Parte 5 — Comparação final:** tabela com variância medida em cada etapa do pipeline e conclusão crítica sobre qual ruído mais degrada a imagem e qual filtro é mais adequado para cada caso
+
+### Ferramentas utilizadas
+
+- Google Colab
+- Python (OpenCV, NumPy, Matplotlib, FFT via NumPy)
